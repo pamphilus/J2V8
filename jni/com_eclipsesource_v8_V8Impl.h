@@ -805,6 +805,14 @@ JNIEXPORT jobject JNICALL Java_com_eclipsesource_v8_V8__1createV8ArrayBufferBack
 
 /*
  * Class:     com_eclipsesource_v8_V8
+ * Method:    _isSecure
+ * Signature: ()Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_eclipsesource_v8_V8__1isSecure
+  (JNIEnv *, jclass);
+
+/*
+ * Class:     com_eclipsesource_v8_V8
  * Method:    _getVersion
  * Signature: ()Ljava/lang/String;
  */

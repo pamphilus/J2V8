@@ -19,8 +19,8 @@
 #include <cstdlib>
 #include "com_eclipsesource_v8_V8Impl.h"
 
-
 #define TAG "J2V8_V8Impl"
+#define SECURE false
 
 #pragma comment(lib, "userenv.lib")
 #pragma comment(lib, "IPHLPAPI.lib")
@@ -483,6 +483,11 @@ JNIEXPORT void JNICALL Java_com_eclipsesource_v8_V8__1setFlags
         env->ReleaseStringUTFChars(v8flags, str);
         v8::V8::Initialize();
     }
+}
+
+JNIEXPORT jboolean JNICALL Java_com_eclipsesource_v8_V8__1isSecure
+  (JNIEnv *env, jclass) {
+  return SECURE;
 }
 
 ShellArrayBufferAllocator array_buffer_allocator;
