@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build_j2v8_android:
     name: Build J2V8 for Android
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout
