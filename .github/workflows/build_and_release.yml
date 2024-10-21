@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build_j2v8_android:
     name: Android
-    runs-on: ubuntu-17.10
+    runs-on: ubuntu-20.04
 
     steps:
     - name: Checkout
