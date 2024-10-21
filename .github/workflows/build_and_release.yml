@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Set up Python 2.x
+      run: sudo apt-get install python2
     - name: Checkout
       uses: actions/checkout@v1
 
