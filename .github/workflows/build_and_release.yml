@@ -34,7 +34,7 @@ jobs:
       run: python2 build.py -t android -a arm64 j2v8release --keep-native-libs --docker
 
     - name: Archive J2V8 Android aar
-      uses: actions/upload-artifact@v1.0.0
+      uses: actions/upload-artifact@v4
       with:
         name: j2v8-android-aar
         path: build/outputs/aar/j2v8-release.aar
