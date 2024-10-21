@@ -5,14 +5,9 @@ on: [push]
 jobs:
   build_j2v8_android:
     name: Build J2V8 for Android
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-17.10
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-    - name: Set up Python 2.x
-      run: sudo apt-get install python2
     - name: Checkout
       uses: actions/checkout@v1
 
